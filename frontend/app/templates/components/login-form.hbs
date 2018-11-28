@@ -1,0 +1,24 @@
+<form {{action 'login' username password callback on="submit"}}>
+    <div>
+        <label>Username
+            {{input valueBinding="username"}}
+        </label>
+    </div>
+    <div>
+        <label>Password
+            {{input valueBinding="password" type="password"}}
+        </label>
+    </div>
+    <div>
+        {{input
+            type="submit"
+            value="Log In"
+            class="button expand"
+        }}
+    </div>
+    {{#if error}}
+        <div>
+            {{error}}
+        </div>
+    {{/if}}
+</form>

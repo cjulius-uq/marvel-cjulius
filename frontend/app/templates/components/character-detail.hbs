@@ -1,0 +1,30 @@
+<div>
+    <div class="small-12 columns">
+        {{character-navbar character=character hideLinks=true}}
+    </div>
+    <div class="contents">
+        <div class="row">
+            <div class="small-12 columns">
+                <img src="{{character.thumbnailUrl}}" style="width: 100%;"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <ul class="pricing-table" style="width:100; padding: 0;">
+                    <li class="title">{{character.name}}</li>
+                    <li class="description">
+                        {{#if character.description}}
+                            {{character.description}}
+                        {{else}}
+                            No description available
+                        {{/if}}
+                    </li>
+                    <li class="bullet-item">Comics: {{character.numComics}}</li>
+                    <li class="bullet-item">Series: {{character.numSeries}}</li>
+                    <li class="bullet-item">Events: {{character.numEvents}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

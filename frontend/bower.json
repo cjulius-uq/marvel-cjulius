@@ -1,0 +1,9 @@
+{
+  "name": "marvel-cjulius-frontend",
+  "dependencies": {
+    "ember": "~2.10.0",
+    "ember-cli-shims": "0.1.3",
+    "uq-its-ss-application-standard-components": "../../uq-standard-application-components",
+    "foundation": "~5.5.0"
+  }
+}
